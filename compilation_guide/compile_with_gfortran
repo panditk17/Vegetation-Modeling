@@ -1,0 +1,26 @@
+1.	Download and install latest hdf5 
+Go to HDF Group page, download newest version of HDF5, eg. HDF5.1.10.1.tar
+Extract tar files
+Open new terminal in the folder where hdf5 is extracted and run the command as below,
+	./configure –prefix=/opt/hdf5 –enable –fortran –enable – cxx
+#command to install 
+sudo make install
+
+2.	check if you already have mpicc installed, otherwise you need to download and install it
+
+3.	download and install zlib
+go to zlib home page, zlib.net
+download file USZlib.net and extract
+open terminal inside the folder
+configure zlib with command below
+	./configure –prefix=/opt/zlib
+# command to install
+	Sudo make install
+
+4.	Make some change in include.mk.gfortran file in ED/build/make as, 
+Line 48,
+HDF5_HOME=/opt/hdf5
+Line 112,
+LIBS = -ldl
+5.	Compile the ED model using,
+./install.sh
