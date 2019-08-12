@@ -1,1 +1,1 @@
-This directory contains source codes modified from original ED2 to run Sagebrush (shrub) PFT in the model, as well as input files necessary for the run.
+This directory contains source codes to run ED2 for sagebrush which is modified from original ED2. It also includes input files necessary for the run.
