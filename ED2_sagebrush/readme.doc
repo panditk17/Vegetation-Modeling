@@ -1,1 +1,16 @@
-This directory contains source codes to run ED2 for sagebrush which is modified from original ED2. It also includes input files necessary for the run.
+Modified source codes for ED2 with shrub parameters
+# Original Ecosystem Demography (ED2) model was developed by Moorcroft et al., 2001, Medvigy et al., 2009, Longo et al., 2019, and team, which is available at github (https://github.com/EDmodel/ED2).
+# This repository contains modified Ecosystem Demography (ED2) model for sagebrush (shrub) PFT. In order to do so we primarily updated ed_params.F90 in the source code with additional PFT, which is represented by number '18'. For the initial works, we selected allometrics equations for temperate PFTs in ED2 to develop coefficients (parameters) related to allometric relationships (such as dbh to height , dbh to leaf biomass etc). We used cube root of volume to represent diameter to calculate allometric equations for shrubs, since they do not have clear main trunk like trees. Another source code ed_max_dims.F90 was also changed to update PFT dimensions.  
+# This repository also includes namelist file (ED2IN), input data (met data and vegetation data) to run model simulations for shrub ecosystem, and output data (sensitivity analysis and calibration) generated from model runs
+
+Folder descriptions:
+1.	EDSH: source codes (modified for sagebrush PFT), which includes sub folders necessary to compile and run model
+2.	Inputs: includes input data used in the model
+3.	Outputs: includes outputs from model run
+4.	Help: help files for compilation and model run
+ 
+References
+Medvigy, D., Wofsy, S. C., Munger, J. W., Hollinger, D. Y., and Moorcroft, P. R.: Mechanistic scaling of ecosystemfunction and dynamics in space and time: Ecosystem Demography model version 2, J. Geophys. Res., 114, G01002, doi:10.1029/2008JG000812, 2009.
+Moorcroft, P. R., Hurtt, G. C., Pacala, S. W.: A method for scaling vegetation dynamics: the Ecosystem Demography model (ED), Ecol. Monogr., 71, 557–586, https://doi.org/10.1890/0012-9615(2001)071[0557:AMFSVD]2.0.CO;2, 2001.
+Longo, M., Knox, R. G., Medvigy, D. M., Levine, N. M., Dietze, M. C., Kim, Y., Swann, A. L. S., Zhang, K., Rollinson, C. R., Bras, R. L., Wofsy, S. C. and Moorcroft, P. R. The biophysics, ecology, and biogeochemistry of functionally diverse, vertically and horizontally heterogeneous ecosystems: the Ecosystem Demography model, version 2.2 -- Part 1: Model description, Geoscientific Model Development, 2019, 4309—4346, 10.5194/gmd-12-4309-2019, 2019.
+
