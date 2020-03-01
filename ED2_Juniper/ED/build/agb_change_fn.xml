@@ -1,0 +1,338 @@
+<?xml version="1.0"?>
+<!DOCTYPE config SYSTEM "defaults">
+<!-- Default parameter sets. These settings -->
+<!-- should give you the same results as if they -->
+<!-- were not used at all. -->
+<!-- EXEPTION: the default root_respiration_factor -->
+<!-- is for Collatz type physiology. -->
+<config>
+   <pft>
+    <num> 18 </num>
+    <SLA> 6 </SLA>
+    <Vm0> 14 </Vm0>  
+    <stomatal_slope> 10 </stomatal_slope>
+    <growth_resp_factor> 0.33 </growth_resp_factor>
+    <leaf_turnover_rate> 1 </leaf_turnover_rate>
+    <root_turnover_rate> 0.33 </root_turnover_rate>
+    <storage_turnover_rate> 0.624 </storage_turnover_rate>
+    <water_conductance> .000019 </water_conductance>
+    <cuticular_cond> 1000 </cuticular_cond>
+    <q> 3.2 </q>
+   </pft>
+
+   <pft> 
+    <num> NUM </num>
+    
+    <Vm0> VM0 </Vm0>
+    <SLA> sla </SLA>
+    <root_turnover_rate> ROOT_TURNOVER_RATE </root_turnover_rate>
+    <leaf_turnover_rate> LEAF_TURNOVER_RATE </leaf_turnover_rate>
+    <stomatal_slope> STOMATAL_SLOPE </stomatal_slope>
+    <cuticular_cond> CUTICULAR_COND </cuticular_cond>
+    <water_conductance> WATER_CONDUCTANCE </water_conductance>
+    <q> QQQ </q>
+    <growth_resp_factor> GROWTH_RESP_FACTOR </growth_resp_factor>
+    
+
+    <b1Ht> B1HT </b1Ht>
+    <b2Ht> B2HT </b2Ht>
+    <b1Bl_small> B1BL_SMALL </b1Bl_small>
+    <b1Bl_large> B1BL_LARGE </b1Bl_large>
+    <b2Bl_small> B2BL_SMALL </b2Bl_small>
+    <b2Bl_large> B2BL_LARGE </b2Bl_large>
+    <b1Bs_small> B1BS_SMALL </b1Bs_small>
+    <b1Bs_large> B1BS_LARGE </b1Bs_large>
+    <b2Bs_small> B2BS_SMALL </b2Bs_small>
+    <b2Bs_large> B2BS_LARGE </b2Bs_large>
+    <b1Vol> B1VOL </b1Vol>
+    <b2Vol> B2VOL </b2Vol>
+
+
+  </pft>
+
+
+  <!--<misc>	
+    <ribmax> RIBMAX </ribmax>
+    <ubmin>  UBMIN </ubmin>
+    <ugbmin> UGBMIN </ugbmin>
+    <ustmin> USTMIN </ustmin>
+   </misc> -->
+  <!--<phenology>
+    <iphen_scheme> IPHEN_SCHEME </iphen_scheme>
+  </phenology> --> 
+</config>
+
+
+
+  
+<!-- Below are all the tags to change them copy them to the uncommented area (above) and run myXML.sh.....
+  
+  <pft>
+    <num> 18 </num>
+    <name> NAME </name>
+    <Vm0> 14 </Vm0>
+    <is_tropical> IS_TROPICAL </is_tropical>
+    <is_grass> IS_GRASS </is_grass>
+    <include_pft> INCLUDE_PFT </include_pft>
+    <water_conductance> .000019 </water_conductance>
+    <cuticular_cond> 1000 </cuticular_cond>
+    <include_pft_ag> INCLUDE_PFT_AG </include_pft_ag>
+    <include_pft_fp> INCLUDE_PFT_FP </include_pft_fp>
+    <orient_factor> ORIENT_FACTOR </orient_factor>
+    <leaf_trans_vis> LEAF_TRANS_VIS </leaf_trans_vis>
+    <leaf_trans_nir> LEAF_TRANS_NIR </leaf_trans_nir>
+    <wood_trans_vis> WOOD_TRANS_VIS </wood_trans_vis>
+    <wood_trans_nir> WOOD_TRANS_nir </wood_trans_nir>
+    <leaf_reflect_vis> LEAF_REFLECT_VIS </leaf_reflect_vis>
+    <leaf_reflect_nir> LEAF_REFLECT_NIR </leaf_reflect_nir>
+    <wood_reflect_vis> WOOD_REFLECT_VIS </wood_reflect_vis>
+    <wood_reflect_nir>WOOD_REFLECT_NIR </wood_reflect_nir>
+    <clumping_factor>  0.84 </clumping_factor>
+    <leaf_backscatter_vis> LEAF_BACKSCATTER_VIS </leaf_backscatter_vis>
+    <leaf_backscatter_nir> LEAF_BACKSCATTER_NIR </leaf_backscatter_nir>
+    <leaf_backscatter_tir> LEAF_BACKSCATTER_TIR </leaf_backscatter_tir>
+    <wood_backscatter_vis> WOOD_BACKSCATTER_VIS </wood_backscatter_vis>
+    <wood_backscatter_nir> WOOD_BACKSCATTER_NIR </wood_backscatter_nir>
+    <wood_backscatter_tir> WOOD_BACKSCATTER_TIR </wood_backscatter_tir>
+    <leaf_scatter_vis> LEAF_SCATTER_VIS </leaf_scatter_vis>
+    <leaf_scatter_nir> LEAF_SCATTER_NIR </leaf_scatter_nir>
+    <wood_scatter_vis> WOOD_SCATTER_VIS </wood_scatter_vis>
+    <wood_scatter_nir> WOOD_SCATTER_NIR </wood_scatter_nir>
+    <phi1> PHI1 </phi1>
+    <phi2> PHI2 </phi2>
+    <mu_bar> MU_BAR </mu_bar>
+    <photosyn_pathway> PHOTOSYN_PATHWAY </photosyn_pathway>
+    <quantum_efficiency> 3.2UANTUM_EFFICIENCY </quantum_efficiency>
+    <Vm_low_temp> VM_LOW_TEMP </Vm_low_temp>
+    <Vm_high_temp> VM_HIGH_TEMP </Vm_high_temp>
+    <Vm_decay_e> VM_DECAY_E </Vm_decay_e>
+    <Vm_decay_a> VM_DECAY_A </Vm_decay_a>
+    <Vm_decay_b> VM_DECAY_B </Vm_decay_b>
+    <vm_hor> VM_HOR </vm_hor>
+    <vm_q10> VM_3.210 </vm_q10>
+    <dark_respiration_factor> DARK_RESPIRATION_FACTOR </dark_respiration_factor>
+    <Rd_low_temp> RD_LOW_TEMP </Rd_low_temp>
+    <Rd_high_temp> RD_HIGH_TEMP </Rd_high_temp>
+    <Rd_decay_e> RD_DECAY_E </Rd_decay_e>
+    <Rd_hor> RD_HOR </Rd_hor>
+    <Rd_q10> RD_3.210 </Rd_q10>
+    <Rd0> RD0 </Rd0>
+    <D0> D0 </D0>
+    <stomatal_slope> 10 </stomatal_slope>
+    <leaf_width> 0.05 </leaf_width>
+    <growth_resp_factor> 0.33 </growth_resp_factor>
+    <leaf_turnover_rate> 1 </leaf_turnover_rate>
+    <root_turnover_rate> 0.33 </root_turnover_rate>
+    <storage_turnover_rate> 0.624 </storage_turnover_rate>
+    <f_labile> F_LABILE </f_labile>
+    <root_respiration_factor> ROOT_RESPIRATION_FACTOR </root_respiration_factor>
+    <rrf_low_temp> RRF_LOW_TEMP </rrf_low_temp>
+    <rrf_high_temp> RRF_HIGH_TEMP </rrf_high_temp>
+    <rrf_decay_e> RRF_DECAY_E </rrf_decay_e>
+    <rrf_hor> RRF_HOR </rrf_hor>
+    <rrf_q10> RRF_3.210 </rrf_q10>
+    <frost_mort> FROST_MORT </frost_mort>
+    <mort0> 0 </mort0>
+    <mort1> 1 </mort1>
+    <mort2> 20 </mort2>
+    <mort3> 0.001 </mort3>
+    <cbr_severe_stress> CBR_SEVERE_STRESS </cbr_severe_stress>
+    <seedling_mortality> 0.95 </seedling_mortality>
+    <treefall_s_gtht> TREEFALL_S_GTHT </treefall_s_gtht>
+    <treefall_s_ltht> TREEFALL_S_LTHT </treefall_s_ltht>
+    <fire_s_gtht> FIRE_S_GTHT </fire_s_gtht>
+    <fire_s_ltht> FIRE_S_LTHT </fire_s_ltht>
+    <plant_min_temp> PLANT_MIN_TEMP </plant_min_temp>
+    <rho> RHO </rho>
+    <SLA> SLA </SLA>
+    <horiz_branch> HORIZ_BRANCH </horiz_branch>
+    <q> 3.2 </q>
+    <sapwood_ratio> SAPWOOD_RATIO </sapwood_ratio>
+    <qsw> 3.2SW </qsw>
+    <init_density> INIT_DENSITY </init_density>
+    <b1Ht> B1HT </b1Ht>
+    <b2Ht> B2HT </b2Ht>
+    <hgt_ref> HGT_REF </hgt_ref>
+    <hgt_min> HGT_MIN </hgt_min>
+    <hgt_max> HGT_MAX </hgt_max>
+    <min_dbh> MIN_DBH </min_dbh>
+    <dbh_crit> DBH_CRIT </dbh_crit>
+    <dbh_adult> DBH_ADULT </dbh_adult>
+    <dbh_bigleaf> DBH_BIGLEAF </dbh_bigleaf>
+    <b1Bl_small> B1BL_SMALL </b1Bl_small>
+    <b1Bl_large> B1BL_LARGE </b1Bl_large>
+    <b2Bl_small> B2BL_SMALL </b2Bl_small>
+    <b2Bl_large> B2BL_LARGE </b2Bl_large>
+    <bleaf_adult> BLEAF_ADULT </bleaf_adult>
+    <b1Bs_small> B1BS_SMALL </b1Bs_small>
+    <b1Bs_large> B1BS_LARGE </b1Bs_large>
+    <b2Bs_small> B2BS_SMALL </b2Bs_small>
+    <b2Bs_large> B2BS_LARGE </b2Bs_large>
+    <min_bdead> MIN_BDEAD </min_bdead>
+    <bdead_crit> BDEAD_CRIT </bdead_crit>
+    <b1Ca> B1CA </b1Ca>
+    <b2Ca> B2CA </b2Ca>
+    <b1WAI> B1WAI </b1WAI>
+    <b2WAI> B2WAI </b2WAI>
+    <brf_wd> BRF_WD </brf_wd>
+    <agf_bs> AGB_BS </agf_bs>
+    <b1Vol> B1VOL </b1Vol>
+    <b2Vol> B2VOL </b2Vol>
+    <b1Rd> B1RD </b1Rd>
+    <b2Rd> B2RD </b2Rd>
+    <init_laimax> INIT_LAIMAX  </init_laimax>
+    <c2n_leaf> 98.80 </c2n_leaf>
+    <c2n_recruit> 112.39 </c2n_recruit>
+    <phenology> PHENOLOGY </phenology>
+    <c_grn_leaf_dry> C_GRN_LEAF_DRY </c_grn_leaf_dry>
+    <wat_dry_ratio_grn> WAT_DRY_RATIO_GRN </wat_dry_ratio_grn>
+    <wat_dry_ratio_ngrn> WAT_DRY_RATIO_NGRN </wat_dry_ratio_ngrn>
+    <c_ngrn_biom_dry> C_NGRN_BIOM_DRY </c_ngrn_biom_dry>
+    <delta_c> DELTA_C </delta_c>
+    <b1Cl> B1CL </b1Cl>
+    <b2Cl> B2CL </b2Cl>
+    <r_fract> R_FRACT </r_fract>
+    <st_fract> ST_FRACT </st_fract>
+    <nonlocal_dispersal> NONLOCAL_DISPERSAL </nonlocal_dispersal>
+    <repro_min_h> 0.25 </repro_min_h>
+    <one_plant_c> ONE_PLANT_C </one_plant_c>
+    <min_recruit_size> MIN_RECRUIT_SIZE </min_recruit_size>
+    <min_cohort_size> MIN_COHORT_SIZE </min_cohort_size>
+    <seed_rain> SEED_RAIN </seed_rain>
+    <negligible_nplant> NEGLIGIBLE_NPLANT </negligible_nplant>
+    <veg_hcap_min> VEG_HCAP_MIN </veg_hcap_min>
+    
+  </pft> -->
+  <!-- <pftconst>
+    <c2n_slow> C2N_SLOW </c2n_slow>
+    <c2n_structural> C2N_STRUCTURE </c2n_structural>
+    <l2n_stem> L2N_STEM </l2n_stem>
+    <C2B> C2B </C2B>
+  </pftconst>
+  <hydro>
+    <useTOPMODEL> USETOPMODEL </useTOPMODEL>
+    <useRUNOFF> USERUNOFF </useRUNOFF>
+    <outputPeriod> OUTPUTPERIOD </outputPeriod>
+    <MoistRateTuning> MOISTRATETUNING </MoistRateTuning>
+    <MoistSatThresh> MOISTSATTHRESH </MoistSatThresh>
+    <MoistdWT> MOISTDWT </MoistdWT>
+    <FracLiqRunoff> FRACLIGRUNOFF </FracLiqRunoff>
+    <runoff_vmax> RUNOFF_VMAX </runoff_vmax>
+    <GrassLAImax> GRASSLAIMAX  </GrassLAImax>
+   </hydro>
+   <lapse>
+    <geoht> GEOHT </geoht>
+    <vels> VELS </vels>
+    <atm_ustar> ATM_USTAR </atm_ustar>
+    <atm_tmp> ATM_TMP </atm_tmp>
+    <rv> RV </rv>
+    <prss> PRESS </prss>
+    <pcpg> PCPG </pcpg>
+    <atm_co2> ATM_CO2 </atm_co2>
+    <rlong> RLONG </rlong>
+    <par_diffuse> PAR_DIFFUSE </par_diffuse>
+    <par_beam> PAR_BEAM </par_beam>
+    <nir_diffuse> NIR_DIFFUSE </nir_diffuse>
+    <nir_beam> NIR_BEAM </nir_beam>
+    <pptnorm> PPTNORM </pptnorm>
+   </lapse>
+  <misc>
+    <gamm> GAMMA </gamm>
+    <gamh> GAMH </gamh>
+    <tprandtl> TPRANDT1 </tprandtl>
+    <ribmax> RIBMAX </ribmax>
+    <leaf_maxwhc> LEAF_MAXWHC </leaf_maxwhc>
+    <ubmin>  UBMIN </ubmin>
+    <ugbmin> UGBMIN </ugbmin>
+    <ustmin> USTMIN </ustmin>
+  </misc>
+  <physiology>
+    <klowco2> KLOWCO2 </klowco2>
+    <ddmort_const> DDMORT_CONST </ddmort_const>
+  </physiology>
+  <radiation>
+    <rlong_min> RLONG_MIN </rlong_min>
+    <veg_temp_min> VEG_TEMP_MIN </veg_temp_min>
+    <leaf_scatter_nir> LEAF_SCATTER_NIR </leaf_scatter_nir>
+    <leaf_reflect_nir> LEAF_ REFLECT_NIR </leaf_reflect_nir>
+    <leaf_trans_nir> LEAF_TRANS_NIR </leaf_trans_nir>
+    <diffuse_backscatter_vis> DIFFUSE_BACKSCATTER_VIS </diffuse_backscatter_vis>
+    <diffuse_backscatter_nir> DIFFUSE_BACKSCATTER_NIR </diffuse_backscatter_nir>
+  </radiation>
+  <soil>
+    <water_stab_thresh> WATER_STAB_THRESH </water_stab_thresh>
+    <infiltration_method> INFILTRATION_METHOD </infiltration_method>
+    <dewmax> DEWMAX </dewmax>
+    <soilstate_db> SOILSTATE_DB </soilstate_db>
+    <soildepth_db> SOILDEPTH_DB </soildepth_db>
+    <isoilstateinit> ISOILSTATEINIT </isoilstateinit>
+    <isoildepthflg> ISOILDEPTHFLG </isoildepthflg>
+    <runoff_time> RUNOFFTIME </runoff_time>
+      <grid>
+         <vegetation_database> VEGETATION_DATABASE </vegetation_database>
+         <soil_database> SOIL_DATABASE </soil_database>
+      </grid>
+  </soil>
+  <decomposition>
+    <cwd_frac> CWD_FRAC </cwd_frac>
+    <resp_opt_water> RESP_OPT_WATER </resp_opt_water>
+    <resp_water_below_opt> RESP_WATER_BELOW_OPT </resp_water_below_opt>
+    <resp_water_above_opt> RESP_WATER_ABOVE_OPT </resp_water_above_opt>
+    <resp_temperature_increase> RESP_TEMPRATURE_INCREASE </resp_temperature_increase>
+    <N_immobil_supply_scale> N_IMMOBIL_SUPPLY_SCALE </N_immobil_supply_scale>
+    <r_fsc> R_FSC </r_fsc>
+    <r_stsc> R_STSC </r_stsc>
+    <r_ssc> R_SSC </r_ssc>
+    <K1> K1 </K1>
+    <K2> K2 </K2>
+    <K3> K3 </K3>
+    <decay_rate_stsc> DECAY_RATE_STSC </decay_rate_stsc>
+    <decay_rate_fsc> DECAY_RATE_FSC </decay_rate_fsc>
+    <decay_rate_ssc> DECAY_RATE_SSC </decay_rate_ssc>
+    <N_decomp_lim> N_DECOMP_LIM </N_decomp_lim>
+    <rh_decay_low> RH_DECAY_LOW </rh_decay_low>
+    <rh_decay_high> RH_DECAY_HIGH </rh_decay_high>
+    <rh_low_temp> RH_LOW_TEMP </rh_low_temp>
+    <rh_high_temp> RH_HIGH_TEMP </rh_high_temp>
+    <rh_decay_dry> RH_DECAY_DRY </rh_decay_dry>
+    <rh_decay_wet> RH_DECAY_WET </rh_decay_wet>
+    <rh_dry_smoist> RH_DRY_SMOIST </rh_dry_smoist>
+    <rh_wet_smoist> RH_WET_SMOIST </rh_wet_smoist>
+  </decomposition>
+  <disturbance>
+    <min_new_patch_area> MIN_NEW_PATCH_AREA </min_new_patch_area>
+    <min_patch_area> MIN_PATCH_AREA </min_patch_area>
+    <ianth_disturb> NIANTH </ianth_disturb>
+    <treefall_disturbance_rate> TREEFALL_DISTURBANCE_RATE </treefall_disturbance_rate>
+    <Time2Canopy> TIME2CANOPY </Time2Canopy>
+    <treefall_hite_threshold> TREEFALL_HITE_THRESHOLD </treefall_hite_threshold>
+    <forestry_on> FORESTRY_ON </forestry_on>
+    <agriculture_on> AGRICULTURE_ON </agriculture_on>
+    <plantation_year> PLANTATION_YEAR </plantation_year>
+    <plantation_rotation> PLANTATION_ROTATION </plantation_rotation>
+    <min_harvest_biomass> MIN_HARVEST_BIOMASS </min_harvest_biomass>
+    <mature_harvest_age> MATURE_HARVEST_AGE </mature_harvest_age>
+    <include_fire> INCLUDE_FIRE </include_fire>
+    <fire_dryness_threshold> FIRE_DRYNESS_THRESHOLD </fire_dryness_threshold>
+    <fire_parameter> FIRE_PARAMETER </fire_parameter>
+  </disturbance>
+  <phenology>
+    <retained_carbon_fraction> RETAINED_CARBON_FRACTION </retained_carbon_fraction>
+    <theta_crit> THETA_CRIT </theta_crit>
+    <dl_tr> D1_TR </dl_tr>
+    <st_tr1> ST_TR1 </st_tr1>
+    <st_tr2> ST_TR2 </st_tr2>
+    <phen_a> PHEN_A </phen_a>
+    <phen_b> PHEN_B </phen_b>
+    <phen_c> PHEN_C </phen_c>
+    <iphen_scheme> IPHEN_SCHEME </iphen_scheme>
+    <iphenys1> IPHENYSI </iphenys1>
+    <iphenysf> IPHENYSF </iphenysf>
+    <iphenyf1> IPHENYFI </iphenyf1>
+    <iphenyff> IPHENYFF </iphenyff>
+  </phenology>
+  <physiology>
+     <n_plant_lim> N_PLANT_LIM </n_plant_lim>
+  </physiology>
+  -->
+
