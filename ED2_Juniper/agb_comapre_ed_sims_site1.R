@@ -1,4 +1,6 @@
-## codes to compare agb oiutputs from the model output
+## these codes to compare agb oiutputs from the model output
+## last update 04-18-2023
+
 setwd('c:/Karun_documents/juniper')
 rm(list=ls(all.names=TRUE))
 vvv=expression(paste("AGB (KgCm"^"-2",")"))
