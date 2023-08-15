@@ -1,5 +1,6 @@
 ## these codes to compare agb oiutputs from the model output
 ## last update 04-18-2023
+## K Pandit
 
 setwd('c:/Karun_documents/juniper')
 rm(list=ls(all.names=TRUE))
