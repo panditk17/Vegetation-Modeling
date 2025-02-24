@@ -1,6 +1,7 @@
 # Codes to read cohort level outputs, patch level outputs and polygon level outputs
 # and calculate polygon level outputs from cohort outputs over time
 # Karun Pandit
+# last updated Feb 2019
 
 setwd('/home/karunpandit/wbs_long_e')
 
