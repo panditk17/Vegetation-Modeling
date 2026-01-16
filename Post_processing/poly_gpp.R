@@ -1,6 +1,9 @@
 # Codes to read cohort level outputs, patch level outputs and polygon level outputs
 # and calculate polygon level outputs from cohort outputs over time
 # Karun Pandit
+## Ecosystem Demography outputs
+
+
 # remove previous files
 rm(list=ls()) 
 
